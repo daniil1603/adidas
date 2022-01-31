@@ -1,0 +1,103 @@
+@media (max-width: 1070px){
+    form{
+        justify-content: space-evenly;
+        gap: 12px;
+    }
+    .links__elements{
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+}
+@media (max-width: 768px){
+    .nav__elements{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;background-color: #A28356;
+        top: 0;
+        right: -100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 00.5s;
+        gap: 15px;
+        z-index: 2;
+    }
+    .nav__links_active{
+        right: 0;
+    }
+    .gender{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 15px;
+    }
+    .proces{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 15px;
+    }
+    .nav__elements a{
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        margin: 5px 0px;
+        display: inline-block;
+    }
+    .hamburgesa{
+        display: block;
+        width: 40px;
+        height: 20px;
+        position: fixed;
+        top:30px;
+        left: 16px;
+        z-index: 6;
+        background-color: transparent;
+    }
+    .hamburgesa span{
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    box-shadow: 0 3px 3px white;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    }
+    .hamburgesa span:nth-child(1){
+        top: 0;
+    }
+    .hamburgesa span:nth-child(2){
+        top: 50%;
+        transform: translateY(-1px);
+    }
+    .hamburgesa span:nth-child(3){
+        bottom: 0;
+    }
+    .hamburgesa_active span:nth-child(1){
+        top: 50%;
+        transform: translateY(-1px) rotate(45deg);
+    }
+    .hamburgesa_active span:nth-child(2){
+        opacity: 0;
+    }
+    .hamburgesa_active span:nth-child(3){
+        bottom: 50%;
+        transform: translateY(1px) rotate(-45deg);
+    }
+    .header__elements{
+        flex-direction: column;
+    }
+    .header__text,.header__foto{
+        width: 100%;
+    }
+}
+@media (max-width:425px){
+    .links__item{
+        width: 100%;
+        text-align: center;
+    }
+    .links__item hr{
+        width: 100%;
+        min-width: 100%;
+    }
+}
